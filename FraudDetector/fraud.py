@@ -8,7 +8,7 @@ import joblib
 
 # %%
 #read the csv file
-csv = pd.read_csv('./archive/creditcard.csv')
+csv = pd.read_csv('../archive/creditcard.csv')
 
 # %%
 #read the first 5 rows of the data to see what is contained in the csv
@@ -142,7 +142,7 @@ print(x_test_score)
 #     new_data_frame = data_frame.drop(columnc = 'Class', axis=1)
 #     return model.predict(new_data_frame)
     
-csv2 = pd.read_csv('./archive/Book1.csv')
+csv2 = pd.read_csv('../archive/Book1.csv')
 print(csv2.to_json(orient='records'))
 
 

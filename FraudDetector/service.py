@@ -8,7 +8,7 @@ def changeJsonToDataFrame(data: list):
     return data_frame
 
 def iscleanDataFrame(data_frame: pd.DataFrame):
-    comparison = pd.read_csv('./archive/Book1.csv')
+    comparison = pd.read_csv('../archive/Book1.csv')
     nulls = data_frame.isnull().sum().sum()
     if(nulls > 0 and set(comparison.columns) != set(data_frame.columns)):
         return False
